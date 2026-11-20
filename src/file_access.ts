@@ -1,4 +1,4 @@
-export class FileAccess {
+export class FileAccess implements NumberProvider {
   constructor(private path: string) {}
 
   public async readNumbers(): Promise<Array<number>> {
